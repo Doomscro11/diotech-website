@@ -1,6 +1,6 @@
 const form = document.querySelector('#quoteForm');
-const menuButton = document.querySelector('.menu-button');
-const navLinks = document.querySelector('.nav-links');
+const menuButton = document.querySelector('.hamburger');
+const drawer = document.querySelector('.mobile-drawer');
 
 if (form) {
   form.addEventListener('submit', (event) => {
@@ -15,10 +15,16 @@ if (form) {
   });
 }
 
-if (menuButton && navLinks) {
+if (menuButton && drawer) {
   menuButton.addEventListener('click', () => {
-    const open = menuButton.getAttribute('aria-expanded') === 'true';
-    menuButton.setAttribute('aria-expanded', String(!open));
-    navLinks.classList.toggle('open');
+    const isOpen = drawer.classList.toggle('open');
+    menuButton.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  drawer.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      drawer.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+    });
   });
 }
