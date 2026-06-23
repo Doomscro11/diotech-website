@@ -4,22 +4,28 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>DIOTECH | Precision Surface Restoration</title>
-  <meta name="description" content="Mobile laser cleaning and surface preparation for metal, wood, marine, fleet, and industrial assets across Ontario." />
+  <meta name="description" content="Mobile surface restoration for metal, wood, marine, fleet, and industrial assets across Ontario." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <main class="phone-shell">
     <header class="topbar">
       <a class="brand" href="#top" aria-label="DIOTECH home"><span class="cube"></span><span>DIOTECH</span></a>
-      <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </header>
+    <nav class="mobile-drawer" aria-label="Mobile navigation">
+      <a href="#services">Services</a>
+      <a href="#results">Results</a>
+      <a href="#process">How It Works</a>
+      <a href="#quote">Request a Quote</a>
+    </nav>
 
     <section id="top" class="hero">
-      <div class="hero-photo" aria-hidden="true"><div class="laser-head"></div><div class="beam"></div><div class="spark-field"></div></div>
+      <div class="hero-photo photo-slot hero-slot"><span>Hero photo slot<br><small>Add DIOTECH field photo here</small></span></div>
       <div class="hero-copy">
-        <p class="kicker">Mobile Laser Cleaning</p>
+        <p class="kicker">Mobile Surface Restoration</p>
         <h1>Precision<br>Surface<br>Restoration</h1>
-        <p>Mobile laser cleaning for metal, wood, marine, fleet, and industrial assets across Ontario.</p>
+        <p>Mobile surface preparation for metal, wood, marine, fleet, and industrial assets across Ontario.</p>
         <a class="cta primary" href="#quote">Book an Assessment <span>→</span></a>
         <a class="cta secondary" href="#services">Explore Services <span>→</span></a>
       </div>
@@ -27,8 +33,8 @@
 
     <section class="trust-strip" aria-label="Trust points">
       <div><span class="icon">▱</span>Mobile Service</div>
-      <div><span class="icon">◇</span>Non-Abrasive</div>
-      <div><span class="icon">⬟</span>Surface-Safe</div>
+      <div><span class="icon">◇</span>Low-Mess</div>
+      <div><span class="icon">⬟</span>Test-Patch First</div>
       <div><span class="icon">⌖</span>Ontario-Based</div>
     </section>
 
@@ -36,10 +42,10 @@
       <p class="kicker">What We Clean</p>
       <h2>One System. Many Surfaces.</h2>
       <div class="service-grid">
-        <article class="service-card"><div class="thumb metal"></div><div><span class="red-icon">T</span><h3>Metal</h3><p>Rust, paint, coatings, oxides & more.</p></div><b>→</b></article>
-        <article class="service-card"><div class="thumb wood"></div><div><span class="red-icon">♧</span><h3>Wood & Decks</h3><p>Restore wood without sanding or harsh chemicals.</p></div><b>→</b></article>
-        <article class="service-card"><div class="thumb marine"></div><div><span class="red-icon">⚓</span><h3>Marine</h3><p>Remove fouling, rust & coatings above waterline.</p></div><b>→</b></article>
-        <article class="service-card"><div class="thumb fleet"></div><div><span class="red-icon">⚙</span><h3>Fleet & Industrial</h3><p>Equipment, frames, tanks, tools & infrastructure.</p></div><b>→</b></article>
+        <article class="service-card"><div class="thumb photo-slot"><span>Metal photo</span></div><div><span class="red-icon">T</span><h3>Metal</h3><p>Rust, paint, coatings, oxides and more.</p></div><b>→</b></article>
+        <article class="service-card"><div class="thumb photo-slot"><span>Wood photo</span></div><div><span class="red-icon">♧</span><h3>Wood & Decks</h3><p>Assessment-led restoration for suitable wood surfaces.</p></div><b>→</b></article>
+        <article class="service-card"><div class="thumb photo-slot"><span>Marine photo</span></div><div><span class="red-icon">⚓</span><h3>Marine</h3><p>Salt corrosion, trailer hardware, fittings and rails.</p></div><b>→</b></article>
+        <article class="service-card"><div class="thumb photo-slot"><span>Fleet photo</span></div><div><span class="red-icon">⚙</span><h3>Fleet & Industrial</h3><p>Equipment, frames, tools and infrastructure.</p></div><b>→</b></article>
       </div>
     </section>
 
@@ -47,30 +53,30 @@
       <p class="kicker">Why DIOTECH</p>
       <h2>A Better Way to Clean.</h2>
       <div class="why-grid">
-        <article><span>◎</span><h3>Precise</h3><p>Laser precision removes only what you don’t want — protecting the base material.</p></article>
-        <article><span>◌</span><h3>Low-Mess</h3><p>Minimal dust and no abrasive media means a cleaner site and faster turnaround.</p></article>
-        <article><span>☑</span><h3>Test-Patch First</h3><p>We test a small area first to confirm results before full cleaning begins.</p></article>
+        <article><span>◎</span><h3>Precise</h3><p>Targeted restoration for the surface being treated.</p></article>
+        <article><span>◌</span><h3>Low-Mess</h3><p>Minimal abrasive media and cleaner site conditions.</p></article>
+        <article><span>☑</span><h3>Test-Patch First</h3><p>We test a small area before full cleaning begins.</p></article>
       </div>
     </section>
 
-    <section class="block results">
+    <section id="results" class="block results">
       <p class="kicker">Visible Results</p>
       <h2>See the Difference.</h2>
       <div class="before-after">
-        <div class="before"><label>Before</label></div>
-        <button aria-label="Slider handle">‹ ›</button>
-        <div class="after"><label>After</label></div>
+        <div class="photo-slot"><label>Before</label><span>Before photo slot</span></div>
+        <button type="button" aria-label="Slider handle">‹ ›</button>
+        <div class="photo-slot"><label>After</label><span>After photo slot</span></div>
       </div>
-      <p class="caption">Real results from real job sites across Ontario. Replace these placeholders with DIOTECH field photos when ready.</p>
+      <p class="caption">Replace these slots with real DIOTECH photos when ready.</p>
     </section>
 
     <section id="process" class="block process">
       <p class="kicker">How It Works</p>
       <h2>Simple. Fast. Professional.</h2>
       <div class="steps">
-        <article><div class="circle">▧<em>1</em></div><h3>Send Photos</h3><p>Share a few photos and tell us about your project.</p></article>
-        <article><div class="circle">▤<em>2</em></div><h3>Get Assessment</h3><p>We’ll review and provide a tailored recommendation and quote.</p></article>
-        <article><div class="circle">▦<em>3</em></div><h3>Schedule Service</h3><p>We come to you and get the job done right.</p></article>
+        <article><div class="circle">▧<em>1</em></div><h3>Send Photos</h3><p>Share photos and tell us about your project.</p></article>
+        <article><div class="circle">▤<em>2</em></div><h3>Get Assessment</h3><p>We review and provide a tailored recommendation.</p></article>
+        <article><div class="circle">▦<em>3</em></div><h3>Schedule Service</h3><p>We come to you and complete the scoped work.</p></article>
       </div>
     </section>
 
@@ -78,8 +84,8 @@
       <div class="quote-copy">
         <p class="kicker">Ready to Restore?</p>
         <h2>Request a Quote</h2>
-        <p>Fast response. Clear prices. On-site service across Ontario.</p>
-        <ul><li>No obligation</li><li>Competitive pricing</li><li>Professional results</li></ul>
+        <p>Fast response. Clear scope. On-site service across Ontario.</p>
+        <ul><li>No obligation</li><li>Clear scope</li><li>Professional results</li></ul>
       </div>
       <form id="quoteForm" class="quote-form">
         <input name="surface" placeholder="Service Needed" required />
@@ -89,7 +95,7 @@
       </form>
     </section>
 
-    <footer class="footer"><span>☎ (647) 123-4567</span><span>⌖ Serving Ontario</span><span>⬟ Fully Insured</span></footer>
+    <footer class="footer"><span>☎ Contact</span><span>⌖ Serving Ontario</span><span>⬟ DIOTECH</span></footer>
   </main>
   <script src="script.js"></script>
 </body>
