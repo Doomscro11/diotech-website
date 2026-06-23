@@ -21,7 +21,7 @@
     </nav>
 
     <section id="top" class="hero">
-      <div class="hero-photo photo-slot hero-slot"><span>Hero photo slot<br><small>Add DIOTECH field photo here</small></span></div>
+      <div class="hero-photo visual-panel hero-panel" aria-hidden="true"></div>
       <div class="hero-copy">
         <p class="kicker">Mobile Surface Restoration</p>
         <h1>Precision<br>Surface<br>Restoration</h1>
@@ -39,19 +39,19 @@
     </section>
 
     <section id="services" class="block">
-      <p class="kicker">What We Clean</p>
-      <h2>One System. Many Surfaces.</h2>
+      <p class="kicker">What We Restore</p>
+      <h2>One Process. Many Surfaces.</h2>
       <div class="service-grid">
-        <article class="service-card"><div class="thumb photo-slot"><span>Metal photo</span></div><div><span class="red-icon">T</span><h3>Metal</h3><p>Rust, paint, coatings, oxides and more.</p></div><b>→</b></article>
-        <article class="service-card"><div class="thumb photo-slot"><span>Wood photo</span></div><div><span class="red-icon">♧</span><h3>Wood & Decks</h3><p>Assessment-led restoration for suitable wood surfaces.</p></div><b>→</b></article>
-        <article class="service-card"><div class="thumb photo-slot"><span>Marine photo</span></div><div><span class="red-icon">⚓</span><h3>Marine</h3><p>Salt corrosion, trailer hardware, fittings and rails.</p></div><b>→</b></article>
-        <article class="service-card"><div class="thumb photo-slot"><span>Fleet photo</span></div><div><span class="red-icon">⚙</span><h3>Fleet & Industrial</h3><p>Equipment, frames, tools and infrastructure.</p></div><b>→</b></article>
+        <article class="service-card"><div class="thumb visual-panel metal-panel" aria-hidden="true"></div><div><span class="red-icon">T</span><h3>Metal</h3><p>Rust, paint, coatings, oxides and more.</p></div><b>→</b></article>
+        <article class="service-card"><div class="thumb visual-panel wood-panel" aria-hidden="true"></div><div><span class="red-icon">♧</span><h3>Wood & Decks</h3><p>Assessment-led restoration for suitable wood surfaces.</p></div><b>→</b></article>
+        <article class="service-card"><div class="thumb visual-panel marine-panel" aria-hidden="true"></div><div><span class="red-icon">⚓</span><h3>Marine</h3><p>Salt corrosion, trailer hardware, fittings and rails.</p></div><b>→</b></article>
+        <article class="service-card"><div class="thumb visual-panel fleet-panel" aria-hidden="true"></div><div><span class="red-icon">⚙</span><h3>Fleet & Industrial</h3><p>Equipment, frames, tools and infrastructure.</p></div><b>→</b></article>
       </div>
     </section>
 
     <section class="block why">
       <p class="kicker">Why DIOTECH</p>
-      <h2>A Better Way to Clean.</h2>
+      <h2>Controlled Surface Restoration.</h2>
       <div class="why-grid">
         <article><span>◎</span><h3>Precise</h3><p>Targeted restoration for the surface being treated.</p></article>
         <article><span>◌</span><h3>Low-Mess</h3><p>Minimal abrasive media and cleaner site conditions.</p></article>
@@ -63,16 +63,15 @@
       <p class="kicker">Visible Results</p>
       <h2>See the Difference.</h2>
       <div class="before-after">
-        <div class="photo-slot"><label>Before</label><span>Before photo slot</span></div>
-        <button type="button" aria-label="Slider handle">‹ ›</button>
-        <div class="photo-slot"><label>After</label><span>After photo slot</span></div>
+        <div class="visual-panel before-panel"><label>Before</label></div>
+        <div class="visual-panel after-panel"><label>After</label></div>
       </div>
-      <p class="caption">Replace these slots with real DIOTECH photos when ready.</p>
+      <p class="caption">Results vary by material, coating, access, and site conditions. Replace these panels with real DIOTECH job photos when available.</p>
     </section>
 
     <section id="process" class="block process">
       <p class="kicker">How It Works</p>
-      <h2>Simple. Fast. Professional.</h2>
+      <h2>Simple. Controlled. Professional.</h2>
       <div class="steps">
         <article><div class="circle">▧<em>1</em></div><h3>Send Photos</h3><p>Share photos and tell us about your project.</p></article>
         <article><div class="circle">▤<em>2</em></div><h3>Get Assessment</h3><p>We review and provide a tailored recommendation.</p></article>
@@ -85,17 +84,21 @@
         <p class="kicker">Ready to Restore?</p>
         <h2>Request a Quote</h2>
         <p>Fast response. Clear scope. On-site service across Ontario.</p>
-        <ul><li>No obligation</li><li>Clear scope</li><li>Professional results</li></ul>
+        <ul><li>No obligation</li><li>Clear scope</li><li>Assessment-first process</li></ul>
       </div>
       <form id="quoteForm" class="quote-form">
-        <input name="surface" placeholder="Service Needed" required />
+        <input name="name" placeholder="Full Name" required />
+        <input name="email" type="email" placeholder="Email Address" required />
+        <input name="phone" placeholder="Phone Number" />
         <input name="location" placeholder="Location" required />
-        <textarea name="condition" placeholder="Tell us about your project..." rows="4"></textarea>
+        <input name="surface" placeholder="Surface / Asset" required />
+        <input name="material" placeholder="Material / Coating" />
+        <textarea name="condition" placeholder="Tell us about the condition, approximate size, access, and desired outcome..." rows="4"></textarea>
         <button class="cta primary" type="submit">Request a Quote <span>→</span></button>
       </form>
     </section>
 
-    <footer class="footer"><span>☎ Contact</span><span>⌖ Serving Ontario</span><span>⬟ DIOTECH</span></footer>
+    <footer class="footer"><span>info@diotech.ca</span><span>Serving Ontario</span><span>DIOTECH</span></footer>
   </main>
   <script src="script.js"></script>
 </body>
