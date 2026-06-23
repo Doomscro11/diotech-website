@@ -86,7 +86,11 @@
         <p>Fast response. Clear scope. On-site service across Ontario.</p>
         <ul><li>No obligation</li><li>Clear scope</li><li>Assessment-first process</li></ul>
       </div>
-      <form id="quoteForm" class="quote-form">
+      <form id="quoteForm" class="quote-form" action="https://formsubmit.co/info@diotech.ca" method="POST">
+        <input type="hidden" name="_subject" value="New DIOTECH quote request" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_next" value="https://doomscro11.github.io/diotech-website/thanks.html" />
+        <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" />
         <input name="name" placeholder="Full Name" required />
         <input name="email" type="email" placeholder="Email Address" required />
         <input name="phone" placeholder="Phone Number" />
